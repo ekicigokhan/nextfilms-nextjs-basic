@@ -55,7 +55,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(235, 238, 235, 0.75);
+  background-color: rgb(235, 238, 235);
   color: #080606;
   width: 300px;
   border-radius: 9999px;

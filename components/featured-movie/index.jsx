@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
 import { FaPlus } from "react-icons/fa";
@@ -7,6 +9,7 @@ import styles from "./styles.module.css";
 
 const FeaturedMovie = ({ movie = {}, isCompact = true }) => {
   const { poster_path, title, overview } = movie;
+
   return (
     <div className={styles.movieWrapper}>
       <h1 className={styles.movieTitle}>{title}</h1>

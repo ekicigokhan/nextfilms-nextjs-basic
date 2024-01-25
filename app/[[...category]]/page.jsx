@@ -20,8 +20,6 @@ export default async function Home({ params }) {
     getCategories(),
   ]);
 
-  console.log(topRatedMovies);
-
   if (params.category?.length > 0) {
     const { results } = await getSingleCategory(params.category[0]);
     selectedCategory = results;
@@ -33,7 +31,7 @@ export default async function Home({ params }) {
       topRatedMovies={topRatedMovies}
       selectedCategory={{
         id: params.category?.[0] ?? "",
-        movies: selectedCategory ? selectedCategory.slice(0, 6) : [],
+        movies: selectedCategory ? selectedCategory : [],
       }}
     />
   );
