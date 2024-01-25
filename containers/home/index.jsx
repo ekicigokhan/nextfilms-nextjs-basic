@@ -12,7 +12,7 @@ const HomeContainer = ({
 }) => {
   return (
     <div>
-      <FeaturedMovie movie={selectedCategory.movies[0]} />
+      <FeaturedMovie movie={topRatedMovies[8]} />
       <Categories categories={categories.slice(0, 7)} />
       {selectedCategory.movies.length > 0 && (
         <MoviesSection
