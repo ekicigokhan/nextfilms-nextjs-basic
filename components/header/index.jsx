@@ -11,10 +11,9 @@ const Header = () => {
           <FaPlayCircle /> GOKHAN FİLMS
         </Link>
         <nav className={styles.navigationMenu}>
-          <Link href={"/"}>Movies</Link>
-          <Link href={"/"}>Series</Link>
-          <Link href={"/"}>Kids</Link>
-          <Link href={"/"}>My Favourites</Link>
+          <Link href={"#"}>Movies</Link>
+          <Link href={"#"}>Series</Link>
+          <Link href={"#"}>Kids</Link>
         </nav>
       </div>
     </header>
